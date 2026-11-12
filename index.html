@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08090d">
+  <title>Lantern — Overview</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="traffic"><i></i><i></i><i></i></div>
+      <div class="brand">LANTERN <span>—</span> <b class="html">HTML</b> · <b class="css">CSS</b> · <b class="js">JS</b></div>
+      <div class="host">localhost / lantern</div>
+    </header>
+
+    <section class="workspace">
+      <aside class="sidebar">
+        <div class="rail" aria-hidden="true"></div>
+        <div class="lantern" id="lantern" aria-hidden="true">
+          <svg viewBox="0 0 64 104">
+            <defs>
+              <linearGradient id="metal" x1="0" x2="1"><stop stop-color="#33343b"/><stop offset=".5" stop-color="#a4a0a0"/><stop offset="1" stop-color="#34343a"/></linearGradient>
+              <linearGradient id="glass" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#fff0b0" stop-opacity=".9"/><stop offset="1" stop-color="#ff8a25" stop-opacity=".12"/></linearGradient>
+              <filter id="glow"><feGaussianBlur stdDeviation="5"/></filter>
+            </defs>
+            <path d="M32 0v10" stroke="#aaa" stroke-width="2"/>
+            <path d="M22 10h20l-3 8H25z" fill="url(#metal)" stroke="#24252a"/>
+            <path d="M19 19Q32 13 45 19l-4 8H23z" fill="#55545a" stroke="#aaa" stroke-width="1"/>
+            <path d="M22 27h20l5 42H17z" fill="#202127" stroke="#77747a" stroke-width="2"/>
+            <path d="M25 29h14l3 36H22z" fill="url(#glass)" opacity=".9"/>
+            <ellipse cx="32" cy="49" rx="11" ry="16" fill="#ff9d36" opacity=".65" filter="url(#glow)"/>
+            <path d="M32 60c-8-9 1-13 0-22 8 9 9 15 0 22z" fill="#ffd78b"/>
+            <path d="M27 63h10l4 7H23z" fill="url(#metal)" stroke="#aaa" stroke-width="1"/>
+            <path d="M18 70h28l-5 7H23z" fill="#45454b" stroke="#999"/>
+            <path d="M23 77h18l-4 7H27z" fill="#292a30" stroke="#777"/>
+            <path d="M29 84h6v8h-6z" fill="#777"/>
+          </svg>
+        </div>
+        <nav class="lantern-nav" aria-label="Main navigation">
+          <a class="nav-link active" href="#overview" data-page="overview" aria-current="page">
+            <span class="nav-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span><span class="nav-label">Overview</span><i class="active-dot"></i>
+          </a>
+          <a class="nav-link" href="#orders" data-page="orders">
+            <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="M3 7v10l9 5 9-5V7M12 12v10"/></svg></span><span class="nav-label">Orders</span><i class="active-dot"></i>
+          </a>
+          <a class="nav-link" href="#clients" data-page="clients">
+            <span class="nav-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-1a6 6 0 0 1 12 0v1M16 5a3 3 0 0 1 0 6M18 14a5 5 0 0 1 3 5v1"/></svg></span><span class="nav-label">Clients</span><i class="active-dot"></i>
+          </a>
+          <a class="nav-link" href="#products" data-page="products">
+            <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="m20 13-7 7-11-11 7-7 11 11Z"/><circle cx="7.5" cy="7.5" r="1.3"/></svg></span><span class="nav-label">Products</span><i class="active-dot"></i>
+          </a>
+          <a class="nav-link" href="#reports" data-page="reports">
+            <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><span class="nav-label">Reports</span><i class="active-dot"></i>
+          </a>
+          <a class="nav-link" href="#settings" data-page="settings">
+            <span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2"/><circle cx="15" cy="17" r="2"/></svg></span><span class="nav-label">Settings</span><i class="active-dot"></i>
+          </a>
+        </nav>
+      </aside>
+
+      <section class="content" aria-live="polite">
+        <div class="content-copy">
+          <span class="eyebrow" id="pageEyebrow">WORKSPACE / OVERVIEW</span>
+          <h1 id="pageTitle">Overview</h1>
+          <p id="pageDescription">Sales are up 12% this week.</p>
+        </div>
+        <div class="content-decoration" aria-hidden="true"><span></span><span></span><span></span></div>
+      </section>
+    </section>
+
+    <section class="code-previews" aria-label="Code previews">
+      <article class="code-card html-card">
+        <h2><i></i> index.html</h2>
+        <pre><code><em>&lt;nav</em> class=<strong>"lantern"</strong>
+  aria-label=<strong>"Main"</strong><em>&gt;</em>
+  <em>&lt;ul</em> class=<strong>"lantern-list"</strong><em>&gt;</em>
+    <em>&lt;li&gt;&lt;a</em> class=<strong>"lantern-link"</strong>
+      href=<strong>"#overview"</strong>
+      aria-current=<strong>"page"</strong><em>&gt;</em>
+      <em>&lt;span</em> class=<strong>"lantern-label"</strong><em>&gt;</em>
+        Overview
+      <em>&lt;/span&gt;</em></code></pre>
+      </article>
+      <article class="code-card css-card">
+        <h2><i></i> lantern.css</h2>
+        <pre><code><comment>/* hooked: the active label turns
+   warm and gets its lit dot */</comment>
+.lantern[data-state="hooked"]
+.lantern-link[aria-current] {
+  color: var(--lantern-light);
+  text-shadow: 0 0 14px
+    var(--lantern-glow);
+}</code></pre>
+      </article>
+      <article class="code-card js-card">
+        <h2><i></i> lantern.js</h2>
+        <pre><code><pink>function</pink> light(flameY) {
+  <pink>const</pink> span = rowH * reachRows;
+  links.forEach((link, i) =&gt; {
+    <pink>const</pink> d = Math.abs(rows[i]
+      - flameY) / span;
+    <pink>const</pink> b = Math.round(clamp(
+      1 - d ** 1.5, 0, 1) * 40) / 40;
+  });
+}</code></pre>
+      </article>
+    </section>
+    <footer><span class="creator-mark">L</span><b>LANTERN</b><small>INTERACTIVE SIDEBAR NAVIGATION</small></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
